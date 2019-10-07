@@ -9,20 +9,20 @@ public class Rectangle {
         this.hauteur = hauteur;
     } /* this a constructor */
 
+    void modifierLargeur(int nouvelleLargeur) {
+        largeur += nouvelleLargeur;
+    }
+
+    void modifierHauteur(int nouvelleHauteur) {
+        hauteur += nouvelleHauteur;
+    }
+
     int perimetre() {
         return (largeur + hauteur) * 2;
     }
 
     int surface() {
         return largeur * hauteur;
-    }
-
-    int modifierLargeur(int l) {
-        return (largeur += l);
-    }
-
-    int modifierHauteur(int h) {
-        return (hauteur += h);
     }
 
 }
