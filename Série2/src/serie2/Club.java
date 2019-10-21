@@ -3,18 +3,16 @@ package serie2;
 public class Club {
     String nom;
     String adrClub;
-    String secretaire;
-    String noTel;
+    Secretaire secretaire;
 
-    Club(String nom, String adrClub, String secretaire, String noTel) {
+    Club(String nom, String adrClub, Secretaire secretaire) {
         this.nom = nom;
         this.adrClub = adrClub;
         this.secretaire = secretaire;
-        this.noTel = noTel;
     }
 
     @Override
     public String toString() {
-        return("Nom: " + nom + "\nadrClub: " + adrClub + "\nSecretaire: " + secretaire + "\nnoTel: " + noTel);
+        return("Nom: " + nom + "\nadrClub: " + adrClub + "\nSecretaire: " + secretaire.nom + "\nnoTel: " + secretaire.nbTel);
     }
 }

@@ -59,4 +59,28 @@ public class Rencontre {
     void ajouterPointsVisiteurs(int points) {
         pointsVisiteurs += points;
     }
+
+    String vainqueur() {
+        String equipe;
+        if (pointsLocaux > pointsVisiteurs) {
+            equipe = locaux.nom;
+        } else if (pointsVisiteurs > pointsLocaux) {
+            equipe = visiteurs.nom;
+        } else {
+            equipe = "Ex æquo";
+        }
+        return(equipe);
+    }
+
+    String equipeFairPlay() {
+        String equipe;
+        if (nbFautesVisiteurs < nbFautesLocaux) {
+            equipe = visiteurs.nom;
+        } else if (nbFautesLocaux < nbFautesVisiteurs) {
+            equipe = locaux.nom;
+        } else {
+            equipe = "Ex æquo";
+        }
+        return(equipe);
+    }
 }

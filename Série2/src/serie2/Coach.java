@@ -10,7 +10,7 @@ public class Coach {
     int nbAnneesExperience() {
         GregorianCalendar now = new GregorianCalendar();
         int anneeEnCours = now.get(GregorianCalendar.YEAR);
-        return(anneeEnCours);
+        return(anneeEnCours - anneeDebut);
     }
 
     Coach(String nom, String prenom, int anneeDebut) {
