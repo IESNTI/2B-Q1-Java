@@ -1,4 +1,4 @@
-package serie2;
+package serie2part2ex2;
 
 public class Principale {
 
@@ -13,20 +13,18 @@ public class Principale {
         Equipe locaux = new Equipe("Locaux", "Categorie", club1, coach1);
         Equipe visiteurs = new Equipe("Visiteurs", "Categorie", club2, coach2);
         Rencontre renc1 = new Rencontre(locaux, visiteurs, 1, 1, 1, 2, juge);
-        System.out.println(renc1.pointsLocaux);
+        System.out.println(renc1.getPointsLocaux());
         System.out.println(renc1.equipeFairPlay());
-        System.out.println(renc1.juge.nom);
-        System.out.println(renc1.locaux.categorie);
-        System.out.println(renc1.locaux.nom + " " + renc1.visiteurs.nom);
-        System.out.println(renc1.juge.matricule());
-        System.out.println(renc1.locaux.coach.nom + " " + renc1.locaux.coach.prenom);
-        System.out.println(renc1.visiteurs.club.adrClub);
-        System.out.println(renc1.visiteurs.club.secretaire);
-        System.out.println(renc1.visiteurs.coach.nbAnneesExperience());
-        renc1.pointsVisiteurs = 56;
-        renc1.juge = new Arbitre("ArbitrePasMalade", "NouvelArbitre", "efg", 1983);
-
-        
+        System.out.println(renc1.getJuge().getNom());
+        System.out.println(renc1.getLocaux().getCategorie());
+        System.out.println(renc1.getLocaux().getNom() + " " + renc1.getVisiteurs().getNom());
+        System.out.println(renc1.getJuge().matricule());
+        System.out.println(renc1.getLocaux().getCoach().getNom() + " " + renc1.getLocaux().getCoach().getPrenom());
+        System.out.println(renc1.getVisiteurs().getClub().getAdrClub());
+        System.out.println(renc1.getVisiteurs().getClub().getSecretaire());
+        System.out.println(renc1.getVisiteurs().getCoach().nbAnneesExperience());
+        renc1.setPointsVisiteurs(56);
+        renc1.setJuge(new Arbitre("ArbitrePasMalade", "NouvelArbitre", "efg", 1983));
     }
 
 }
