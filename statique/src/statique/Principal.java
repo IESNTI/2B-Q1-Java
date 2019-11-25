@@ -2,11 +2,11 @@ package src.statique;
 
 public class Principal {
     public static void main(String[] args) {
-        Restaurant resto1 = new Restaurant("La Veganitude","danstonbrocoli",2);
-        Cuistot cuistot1 = new Cuistot("Jean-mich",1995,resto1);
-        Restaurant resto2 = new Restaurant("Blabla", "blabla", 2);
-        ChefCoq chef1 = new ChefCoq("lol", 2010, resto1, 8);
-        ChefCoq chef2 = new ChefCoq("lol", 2010, resto1, 21);
+        //Restaurant resto1 = new Restaurant("La Veganitude","danstonbrocoli",2);
+        //Cuistot cuistot1 = new Cuistot("Jean-mich",1995,resto1);
+        //Restaurant resto2 = new Restaurant("Blabla", "blabla", 2);
+        //ChefCoq chef1 = new ChefCoq("lol", 2010, resto1, 8);
+        //ChefCoq chef2 = new ChefCoq("lol", 2010, resto1, 21);
 
         System.out.println(Restaurant.getNbResto2Macarons());
         System.out.println(ChefCoq.moyenneNbPersonnes());
