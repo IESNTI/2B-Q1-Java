@@ -21,7 +21,7 @@ public class Villa extends BienImmobilier {
 
     String descriptionTerrain() {
         String campagneOrVille = "à la campagne";
-        if (campagne == false) {
+        if (!campagne) {
             campagneOrVille = "en ville";
         }
         return ("Terrain de " + superficieTerrain + " ares situé " + campagneOrVille + "," + getLocalite());

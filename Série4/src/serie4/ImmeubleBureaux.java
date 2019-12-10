@@ -20,6 +20,6 @@ public class ImmeubleBureaux extends Immeuble {
 
     @Override
     public String toString() {
-        return(super.toString() + "(il comprend " + nbM2 + " m2 de bureau dont la location rapporte" + revenuMensuel() + "euros)");
+        return(super.toString() + "(il comprend " + nbM2 + " m2 de bureau dont la location rapporte" + prixM2 * nbM2 + "euros)");
     }
 }

@@ -21,7 +21,7 @@ public class ImmeubleRezCommercial extends Immeuble {
     }
 
     double revenuMensuel() {
-        return (revenuMensuel() + revenuLocationMagasins);
+        return (super.revenuMensuel() + revenuLocationMagasins);
     }
 
     /**

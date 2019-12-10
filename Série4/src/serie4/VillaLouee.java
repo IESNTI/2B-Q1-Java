@@ -31,6 +31,6 @@ public class VillaLouee extends Villa {
     @Override
     public String toString() {
         return (super.toString() + "et est louée à Monsieur " + locataire + "pour un loyer de " + loyer
-                + " euros par mois (durée du bail: " + dureeBail + " an(s))");
+                + " euros par mois (durée du bail: " + dureeBail/12 + " an(s))");
     }
 }
